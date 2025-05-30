@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat de Apoio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <div class="bg-blue-800 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-4">Chat de Apoio</h1>
+      <p class="text-blue-100 max-w-3xl mx-auto text-lg">
+        Um espaço para receber orientações iniciais sobre como lidar com situações de emergência.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <div class="lg:col-span-2">
+        <div class="bg-white p-6 rounded shadow">
+          <p class="text-gray-600 text-center">[ Componente de Chat será implementado aqui ]</p>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        
+        <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-md">
+          <div class="flex items-start">
+            <svg class="icon text-red-600 mr-3 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 9v4m0 4h.01m-6.938 4h13.856c1.054 0 1.643-1.14 1.08-2.054L13.08 4.946c-.527-.894-1.833-.894-2.36 0L3.002 18.946c-.563.914.026 2.054 1.08 2.054z"/>
+            </svg>
+            <div>
+              <h3 class="font-semibold text-gray-800 mb-1">Aviso Importante</h3>
+              <p class="text-gray-700 text-sm">
+                Este chat é uma simulação e não substitui atendimento profissional ou serviços de emergência. 
+                Em caso de emergência real, utilize os contatos oficiais.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="font-semibold text-gray-800 mb-3 flex items-center">
+            <svg class="icon text-blue-600 mr-2" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+            Como usar este chat
+          </h3>
+          <ul class="text-gray-700 space-y-2 text-sm">
+            <li class="flex items-start">
+              <span class="bg-blue-100 text-blue-800 font-semibold rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2 mt-0.5">1</span>
+              <span>Descreva brevemente a situação que você está enfrentando</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-100 text-blue-800 font-semibold rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2 mt-0.5">2</span>
+              <span>O assistente fornecerá orientações iniciais e recursos</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-100 text-blue-800 font-semibold rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2 mt-0.5">3</span>
+              <span>Você pode fazer perguntas de acompanhamento para obter mais detalhes</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-100 text-blue-800 font-semibold rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2 mt-0.5">4</span>
+              <span>Para assistência real, utilize os contatos de emergência disponíveis na seção de Contatos</span>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="font-semibold text-gray-800 mb-3 flex items-center">
+            <svg class="icon text-blue-600 mr-2" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 19.5A2.5 2.5 0 006.5 22h11a2.5 2.5 0 002.5-2.5V4a2 2 0 00-2-2H7.672a2 2 0 00-1.418.586l-2.67 2.67A2 2 0 003 6.828V19.5z"/>
+            </svg>
+            Exemplos de tópicos
+          </h3>
+          <ul class="text-gray-700 space-y-1 text-sm list-disc pl-5">
+            <li>Como ajudar crianças a lidar com o trauma</li>
+            <li>Técnicas para reduzir ansiedade durante emergências</li>
+            <li>O que fazer após perder sua casa em um desastre</li>
+            <li>Como reconhecer sinais de estresse pós-traumático</li>
+            <li>Estratégias para enfrentar o luto após desastres</li>
+            <li>Onde encontrar abrigo temporário</li>
+          </ul>
+        </div>
+
+        
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h3 class="font-semibold text-gray-800 mb-3">Links Rápidos</h3>
+          <div class="space-y-2 text-sm">
+            <a href="/contatos" class="block text-blue-600 hover:text-blue-800 transition-colors">→ Contatos de Emergência</a>
+            <a href="/recursos" class="block text-blue-600 hover:text-blue-800 transition-colors">→ Recursos de Apoio</a>
+            <a href="/informacoes" class="block text-blue-600 hover:text-blue-800 transition-colors">→ Informativos sobre Emergências</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
