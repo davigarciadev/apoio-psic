@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recursos de Apoio</title>
+  <link rel="stylesheet" href="css/resourcesPage.css" />
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="container text-center">
+      <h1 class="header-title">Recursos de Apoio</h1>
+      <p class="header-subtitle">
+        Material informativo e guias para ajudar no enfrentamento e recuperação de situações traumáticas.
+      </p>
+    </div>
+  </header>
+
+  
+  <section class="search-filter">
+    <div class="container">
+      <div class="search-filter-row">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Buscar recursos..." />
+        </div>
+        <div class="filter-box">
+          <select id="categorySelect">
+            <option value="">Todas categorias</option>
+            <option value="Saúde Mental">Saúde Mental</option>
+            <option value="Orientações">Orientações</option>
+            
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <main class="resources">
+    <div class="container">
+      <div class="resource-grid">
+        
+        <div class="resource-card">
+          <h3>Guia de Primeiros Socorros Emocionais</h3>
+          <p>Aprenda como agir em situações de crise emocional.</p>
+        </div>
+        <div class="resource-card">
+          <h3>Rede de Apoio Psicológico</h3>
+          <p>Encontre profissionais próximos de você.</p>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+  
+  <div class="no-results" style="display: none;" id="noResults">
+    <p>Nenhum recurso encontrado para sua busca.</p>
+    <button onclick="limparFiltros()">Limpar filtros</button>
+  </div>
+
+  
+  <section class="help-section">
+    <div class="container">
+      <h2 class="section-title">Precisa de mais ajuda?</h2>
+      <div class="help-boxes">
+        <div class="help-box">
+          <h3>Recursos Online</h3>
+          <p>Acesse nosso chat de apoio para orientações iniciais.</p>
+          <a href="/chat" class="btn btn-blue">Iniciar chat</a>
+        </div>
+        <div class="help-box">
+          <h3>Ajuda Profissional</h3>
+          <p>Encontre profissionais de saúde mental qualificados.</p>
+          <a href="/contatos" class="btn btn-green">Ver contatos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
