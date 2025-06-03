@@ -5,6 +5,63 @@ body {
   color: #111827;
 }
 
+.cabecalho-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(68.15deg, #E1AC8B 16.62%, #F8F1EB 85.61%);
+    padding: 10px;
+}
+
+.logo-cabecalho {
+    height: 62px;
+}
+
+.menu-cabecalho {
+   display: flex;
+   gap: 10px;
+   
+}
+
+.item-menu {
+    font-family: "DM Serif Text", sans-serif;
+    color: #582d1c;
+    font-weight: 700;
+    font-size: 17px;
+    display: flex;              
+    align-items: center;         
+    height: 40px;                
+    padding: 10px; 
+}
+
+.botao-emergencia {
+    background-color: #e23d3d;
+    width: 120px;
+    height: 40px;
+    border: none;   
+    border-radius: 20px;
+     font-family: "DM Serif Text", sans-serif;
+     font-weight: 700;
+     font-size: 15px;
+     color: #ffffff;
+
+}  
+
+.botao-menu {
+    background-color: #E1AC8B;
+    width: 170px;
+    height: 40px;
+    border: none;   
+    border-radius: 20px;
+     font-family: "DM Serif Text", sans-serif;
+     font-weight: 700;
+     font-size: 15px;
+     color: #582d1c;
+    
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
