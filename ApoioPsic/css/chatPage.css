@@ -1,14 +1,14 @@
 body {
-  background-color: #f3f4f6;
+ background: linear-gradient(68.15deg,  #f1dac6 16.62%, #ffffff 85.61%);
   margin: 0;
-  font-family: Arial, sans-serif;
+
 }
 
-.cabecalho-azul {
+.cabecalho {
   font-family: "Righteous", serif;
   color: #582d1c;
   font-weight: 700;
-  background-color:  #E1AC8B;
+  background: linear-gradient(68.15deg, #E1AC8B 16.62%, #F8F1EB 85.61%);
   padding: 80px 0;
 }
 
@@ -23,13 +23,16 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: "Righteous", serif;
+  
 }
 
 .subtitulo {
-  color: #dbeafe;
+  color: #6a452c;
   max-width: 768px;
   margin: 0 auto;
-  font-size: 1.125rem;
+  font-size: 15px;
+  font-family: "DM Serif Text", sans-serif;
 }
 
 .conteudo-principal {
@@ -56,12 +59,12 @@ body {
 }
 
 .chat-simulacao {
-  background: white;
+  background: #F8F1EB;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   text-align: center;
-  color: #4b5563;
+  color:#582d1c;
 }
 
 .sidebar {
@@ -86,6 +89,7 @@ body {
 .icon-vermelho {
   color: #dc2626;
   margin-top: 4px;
+  margin: 1rem;
 }
 
 .titulo-alerta {
@@ -97,10 +101,11 @@ body {
 .texto-alerta {
   color: #374151;
   font-size: 0.875rem;
+  font-family: "DM Serif Text", sans-serif;
 }
 
 .caixa {
-  background: white;
+  background: #F8F1EB;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -109,21 +114,23 @@ body {
 .titulo-caixa {
   display: flex;
   align-items: center;
-  color: #1f2937;
+  color: #331a11;
   font-weight: bold;
   margin-bottom: 12px;
+  font-family: "Righteous", serif;
 }
 
 .icon-azul {
-  color: #2563eb;
+  color: #1c3e86;
   margin-right: 8px;
 }
 
 .lista-numerada {
   list-style: none;
   padding: 0;
-  color: #374151;
+  color: 6a452c;
   font-size: 0.875rem;
+  font-family: "DM Serif Text", sans-serif;
 }
 
 .lista-numerada li {
@@ -131,11 +138,12 @@ body {
   align-items: start;
   gap: 8px;
   margin-bottom: 8px;
+  color: #331a11;
 }
 
 .bolinha {
-  background-color: #dbeafe;
-  color: #1d4ed8;
+  background-color: #f1c79f;
+  color:  #6a452c;
   font-weight: bold;
   border-radius: 9999px;
   width: 20px;
@@ -149,27 +157,31 @@ body {
 }
 
 .lista-topicos {
-  color: #374151;
+  color: #582d1c;
   font-size: 0.875rem;
   list-style: disc;
   padding-left: 20px;
+  font-family: "DM Serif Text", sans-serif;
 }
 
 .caixa-links {
-  background-color: #f9fafb;
+  background-color: #F8F1EB;
   border-radius: 8px;
   padding: 24px;
+
 }
 
 .lista-links a {
   display: block;
-  color: #2563eb;
+  color: #1c3e86;
   text-decoration: none;
   transition: color 0.2s;
   margin-bottom: 8px;
   font-size: 0.875rem;
+  font-family: "DM Serif Text", sans-serif;
 }
 
 .lista-links a:hover {
-  color: #1e3a8a;
+  color:#331a11;
+
 }

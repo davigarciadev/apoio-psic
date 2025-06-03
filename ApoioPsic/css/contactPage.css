@@ -1,7 +1,6 @@
 body {
-  background-color: #f9fafb;
-  margin: 0;
-  font-family: sans-serif;
+  background: linear-gradient(68.15deg,  #f1dac6 16.62%, #ffffff 85.61%);
+  margin: 0;  
 }
 
 .container {
@@ -15,7 +14,7 @@ body {
 }
 
 .header-section {
-  background-color: #E1AC8B;
+  background: linear-gradient(68.15deg, #E1AC8B 16.62%, #F8F1EB 85.61%);
   color: #582d1c;
   padding: 5rem 0;
 }
@@ -24,13 +23,15 @@ body {
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: "Righteous", serif; 
 }
 
 .subtitle {
-  color: #c7d2fe;
+  color:#6a452c;
   font-size: 1.125rem;
   max-width: 768px;
   margin: 0 auto;
+  font-family: "DM Serif Text", sans-serif;
 }
 
 .alert-section {
@@ -46,6 +47,8 @@ body {
 
 .icon-wrapper {
   margin-right: 1rem;
+  margin: 2rem;
+  
 }
 
 .icon-red {
@@ -61,10 +64,12 @@ body {
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 0.5rem;
+  font-family: "Righteous", serif; 
 }
 
 .alert-text {
   color: #374151;
+  font-family: "DM Serif Text", sans-serif;
 }
 
 .content-section {
@@ -74,8 +79,9 @@ body {
 .section-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #111827;
+  color: #331a11;
   margin-bottom: 2rem;
+  font-family: "Righteous", serif; 
 }
 
 .card-grid {
@@ -96,7 +102,7 @@ body {
 }
 
 .card {
-  background-color: white;
+  background-color: #F8F1EB;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -105,15 +111,19 @@ body {
 .card-title {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1f2937;
+  color:#331a11;
+  font-family: "Righteous", serif; 
+
 }
 
 .card-text {
-  color: #374151;
+  color:#331a11;
+  font-family: "DM Serif Text", sans-serif;
+
 }
 
 .support-card {
-  background-color: white;
+  background-color: #F8F1EB;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -123,14 +133,21 @@ body {
 .support-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #582d1c;
   margin-bottom: 1rem;
+  font-family: "Righteous", serif; 
+  
 }
 
 .support-grid {
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Serif Text", sans-serif; 
+}
+.support-grid2 {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
+  font-family: "DM Serif Text", sans-serif;
+  
 }
 
 @media (min-width: 768px) {
@@ -141,13 +158,14 @@ body {
 
 .support-subtitle {
   font-weight: 500;
-  color: #1f2937;
+  color:  #582d1c;
   margin-bottom: 0.5rem;
 }
 
 .support-text {
-  color: #4b5563;
-  margin-bottom: 0.5rem;
+  color: #6a452c;
+  margin-bottom: 1.5rem;
+  font-family: "DM Serif Text", sans-serif;
 }
 
 .bold {
@@ -155,7 +173,7 @@ body {
 }
 
 .info-box {
-  background-color: #eff6ff;
+  background-color: #F8F1EB;
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
