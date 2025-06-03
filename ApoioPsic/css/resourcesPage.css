@@ -20,7 +20,12 @@ body {
 .menu-cabecalho {
    display: flex;
    gap: 10px;
-   
+   align-items: center;
+}
+
+.botao-emergencia a {
+  color: white;
+  text-decoration: none;
 }
 
 .item-menu {

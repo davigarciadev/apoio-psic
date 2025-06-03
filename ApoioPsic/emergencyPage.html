@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página de Emergência</title>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/emergencyPage.css">
+  <link rel="stylesheet" href="/ApoioPsic/css/emergencyPage.css">
 </head>
 <body class="bg-red-50">
 
@@ -23,102 +22,88 @@
         </nav>
     </header>
 
-  <header class="bg-red-600 text-white py-8 text-center">
-    <div class="container mx-auto px-4">
-      <div id="alert-icon" class="mx-auto mb-4"></div>
-      <h1 class="text-4xl font-bold mb-4">Página de Emergência</h1>
-      <p class="max-w-3xl mx-auto text-lg">Se você está em uma situação de emergência imediata, utilize os contatos abaixo.</p>
+  <header class="emergency-header">
+    <div class="alert-container">
+      <div id="alert-icon"></div>
+      <h1>Página de Emergência</h1>
+      <p>Se você está em uma situação de emergência imediata, utilize os contatos abaixo.</p>
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-12">
+  <main class="container">
 
-    <section class="bg-white rounded-lg shadow-lg p-8 mb-12 max-w-3xl mx-auto">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Contatos Prioritários</h2>
+    <section class="box">
+      <h2>Contatos Prioritários</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-red-100 p-6 rounded-lg">
-          <h3 class="font-bold text-xl text-red-800 mb-3">Bombeiros</h3>
-          <p class="text-gray-800 mb-4">Para incêndios, acidentes, resgates e outras emergências</p>
-          <a href="tel:193" class="flex items-center justify-center w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-md text-lg font-bold transition-colors">
-            <i data-lucide="phone" class="mr-2"></i> 193
-          </a>
+      <div class="card-grid">
+        <div class="contact-card">
+          <h3>Bombeiros</h3>
+          <p>Para incêndios, acidentes, resgates e outras emergências</p>
+          <a href="tel:193" class="btn-red"><i data-lucide="phone"></i> 193</a>
         </div>
 
-        <div class="bg-red-100 p-6 rounded-lg">
-          <h3 class="font-bold text-xl text-red-800 mb-3">SAMU</h3>
-          <p class="text-gray-800 mb-4">Para emergências médicas que necessitam de ambulância</p>
-          <a href="tel:192" class="flex items-center justify-center w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-md text-lg font-bold transition-colors">
-            <i data-lucide="phone" class="mr-2"></i> 192
-          </a>
+        <div class="contact-card">
+          <h3>SAMU</h3>
+          <p>Para emergências médicas que necessitam de ambulância</p>
+          <a href="tel:192" class="btn-red"><i data-lucide="phone"></i> 192</a>
         </div>
 
-        <div class="bg-red-100 p-6 rounded-lg">
-          <h3 class="font-bold text-xl text-red-800 mb-3">Defesa Civil</h3>
-          <p class="text-gray-800 mb-4">Para desastres naturais, áreas de risco e evacuações</p>
-          <a href="tel:199" class="flex items-center justify-center w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-md text-lg font-bold transition-colors">
-            <i data-lucide="phone" class="mr-2"></i> 199
-          </a>
+        <div class="contact-card">
+          <h3>Defesa Civil</h3>
+          <p>Para desastres naturais, áreas de risco e evacuações</p>
+          <a href="tel:199" class="btn-red"><i data-lucide="phone"></i> 199</a>
         </div>
 
-        <div class="bg-red-100 p-6 rounded-lg">
-          <h3 class="font-bold text-xl text-red-800 mb-3">Polícia</h3>
-          <p class="text-gray-800 mb-4">Para situações que exigem intervenção policial imediata</p>
-          <a href="tel:190" class="flex items-center justify-center w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-md text-lg font-bold transition-colors">
-            <i data-lucide="phone" class="mr-2"></i> 190
-          </a>
+        <div class="contact-card">
+          <h3>Polícia</h3>
+          <p>Para situações que exigem intervenção policial imediata</p>
+          <a href="tel:190" class="btn-red"><i data-lucide="phone"></i> 190</a>
         </div>
       </div>
 
-      <div class="mt-8 bg-blue-50 p-6 rounded-lg">
-        <h3 class="font-bold text-xl text-blue-800 mb-3">Apoio Emocional - CVV</h3>
-        <p class="text-gray-800 mb-4">Centro de Valorização da Vida - Apoio emocional e prevenção do suicídio (24 horas)</p>
-        <a href="tel:188" class="flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md text-lg font-bold transition-colors">
-          <i data-lucide="phone" class="mr-2"></i> 188
-        </a>
+      <div class="support-card">
+        <h3>Apoio Emocional - CVV</h3>
+        <p>Centro de Valorização da Vida - Apoio emocional e prevenção do suicídio (24 horas)</p>
+        <a href="tel:188" class="btn-blue"><i data-lucide="phone"></i> 188</a>
       </div>
     </section>
 
-    <section class="bg-white rounded-lg shadow-lg p-8 mb-12 max-w-3xl mx-auto">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Ações Imediatas</h2>
+    <section class="box">
+      <h2>Ações Imediatas</h2>
 
-      <div class="space-y-4">
-        <div class="border-l-4 border-yellow-500 pl-4 py-2">
-          <h3 class="font-semibold text-lg text-gray-800 mb-1">Mantenha a calma</h3>
-          <p class="text-gray-700">Respire profundamente e tente manter a clareza mental para tomar as decisões necessárias.</p>
+      <div class="steps">
+        <div class="step">
+          <h3>Mantenha a calma</h3>
+          <p>Respire profundamente e tente manter a clareza mental para tomar as decisões necessárias.</p>
         </div>
 
-        <div class="border-l-4 border-yellow-500 pl-4 py-2">
-          <h3 class="font-semibold text-lg text-gray-800 mb-1">Avalie a situação</h3>
-          <p class="text-gray-700">Identifique os riscos imediatos e afaste-se de perigos, se possível.</p>
+        <div class="step">
+          <h3>Avalie a situação</h3>
+          <p>Identifique os riscos imediatos e afaste-se de perigos, se possível.</p>
         </div>
 
-        <div class="border-l-4 border-yellow-500 pl-4 py-2">
-          <h3 class="font-semibold text-lg text-gray-800 mb-1">Busque ajuda</h3>
-          <p class="text-gray-700">Entre em contato com os serviços de emergência apropriados para sua situação.</p>
+        <div class="step">
+          <h3>Busque ajuda</h3>
+          <p>Entre em contato com os serviços de emergência apropriados para sua situação.</p>
         </div>
 
-        <div class="border-l-4 border-yellow-500 pl-4 py-2">
-          <h3 class="font-semibold text-lg text-gray-800 mb-1">Informe sua localização</h3>
-          <p class="text-gray-700">Forneça informações claras sobre onde você está para facilitar o resgate.</p>
+        <div class="step">
+          <h3>Informe sua localização</h3>
+          <p>Forneça informações claras sobre onde você está para facilitar o resgate.</p>
         </div>
 
-        <div class="border-l-4 border-yellow-500 pl-4 py-2">
-          <h3 class="font-semibold text-lg text-gray-800 mb-1">Siga instruções</h3>
-          <p class="text-gray-700">Ouça e siga as orientações dadas pelos profissionais de emergência.</p>
+        <div class="step">
+          <h3>Siga instruções</h3>
+          <p>Ouça e siga as orientações dadas pelos profissionais de emergência.</p>
         </div>
       </div>
     </section>
 
-    <section class="text-center">
-      <p class="text-gray-600 mb-4">Após a situação de emergência ter sido atendida, retorne para:</p>
-      <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-        <a href="/" class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-6 rounded-md transition-colors flex items-center justify-center">
-          Página Inicial
-        </a>
-        <a href="/chat" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md transition-colors flex items-center justify-center">
-          <i data-lucide="helping-hand" class="mr-2"></i> Chat de Apoio
-        </a>
+    <section class="redirect">
+      <p>Após a situação de emergência ter sido atendida, retorne para:</p>
+      <div class="redirect-buttons">
+        <a href="/" class="btn-gray">Página Inicial</a>
+        <a href="/chat" class="btn-blue"><i data-lucide="helping-hand"></i> Chat de Apoio</a>
       </div>
     </section>
 
