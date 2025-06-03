@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+       background: linear-gradient(68.15deg, #F8F1EB 16.62%, #ffffff 85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(68.15deg, #E1AC8B 16.62%, #F8F1EB 85.61%);
+    padding: 10px;
+}
+
+.logo-cabecalho {
+    height: 62px;
+}
+
+.menu-cabecalho {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+
+.botao-emergencia a {
+  color: white;
+  text-decoration: none;
+}
+
+.item-menu {
+    font-family: "DM Serif Text", sans-serif;
+    color: #582d1c;
+    font-weight: 700;
+    font-size: 17px;
+    display: flex;              
+    align-items: center;         
+    height: 40px;                
+    padding: 10px; 
+}
+
+.botao-emergencia {
+    background-color: #e23d3d;
+    width: 120px;
+    height: 40px;
+    border: none;   
+    border-radius: 20px;
+     font-family: "DM Serif Text", sans-serif;
+     font-weight: 700;
+     font-size: 15px;
+     color: #ffffff;
+
+}  
+
+.botao-menu {
+    background-color: #E1AC8B;
+    width: 90px;
+    height: 40px;
+    border: none;   
+    border-radius: 20px;
+     font-family: "DM Serif Text", sans-serif;
+     font-weight: 700;
+     font-size: 15px;
+     color: #582d1c;
+    
+}  
+
+.botao-cadastro {
+    background-color: #E1AC8B;
+    width: 90px;
+    height: 40px;
+    border: none;   
+    border-radius: 20px;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #582d1c;
+    justify-content: center;
+}
+
+
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #fefaf7;
+    padding: 40px 20px;
+}
+
+.form-box {
+    background-color: #fff7f2;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+    color: #582d1c;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #582d1c;
+}
+
+.formulario-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.formulario-cadastro label {
+    font-weight: bold;
+}
+
+.formulario-cadastro input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d9bba9;
+    font-size: 16px;
+    background-color: #fffaf6;
+}
+
+.botao-cadastrar {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8c5c3a;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.botao-cadastrar:hover {
+    background-color: #a66a45;
+}
+
+.mensagem-cadastro {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #fff2e7;
+    display: block;
+    text-align: center;
+    color:  #582d1c;
+    font-family: "Righteous", serif; 
+    font-weight: 400; 
+    font-size: 14px;
+}
