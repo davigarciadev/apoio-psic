@@ -36,6 +36,20 @@ body {
   text-decoration: none;
 }
 
+.botao-cadastro {
+    background-color: #E1AC8B;
+    width: 100px;
+    height: 40px;
+    border: none;   
+    border-radius: 20px;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #582d1c;
+    justify-content: center;
+}
+
+
 .item-menu {
     font-family: "DM Serif Text", sans-serif;
     color: #582d1c;
@@ -62,7 +76,7 @@ body {
 
 .botao-menu {
     background-color: #E1AC8B;
-    width: 170px;
+    width: 90px;
     height: 40px;
     border: none;   
     border-radius: 20px;
