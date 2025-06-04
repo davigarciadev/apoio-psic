@@ -76,16 +76,29 @@ body {
 
 .botao-menu {
     background-color: #E1AC8B;
-    width: 90px;
+    width: 170px;
     height: 40px;
     border: none;   
     border-radius: 20px;
-     font-family: "DM Serif Text", sans-serif;
-     font-weight: 700;
-     font-size: 15px;
-     color: #582d1c;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #582d1c;
     
 }  
+
+.botao-cadastro {
+    background-color: #E1AC8B;
+    width: 125px;
+    height: 40px;
+    border: none;   
+    border-radius: 20px;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #582d1c;
+    justify-content: center;
+}
 
  .conteudo {
     border-top: 1px solid #e7ccbb;
@@ -128,46 +141,175 @@ body {
     width: 650px;
     height: 400px;
 
-    }
-
-.conteudo-secundario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    margin-top: 48px;
-    border: 2px solid #582d1c; 
-    margin: 100px;
-    padding: 10px;            
-    border-radius: 12px; 
-   } 
-
-.secundario-titulo {
-    padding-top: 48px;
-    font-family: "Righteous", serif; 
-    font-weight: 400; 
-    font-size: 24px;
-    color:  #582d1c;
-    margin-bottom: 16px ;
 }
 
-.secundario-escrito {
-    font-family: "DM Serif Text", sans-serif;
-    color:  #582d1c;
-    font-weight: 300;
-    font-size: 18px;    
+.alerta-destaque {
+  background-color: #fff3cd;
+  border-left: 6px solid #ff9800;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-family: "DM Serif Text", sans-serif;
+  color: #5f370e;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.conteudo-secundario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 60px;
+  background-color: #fff9f4;
+  border: 2px solid #d9b6a3;
+  border-radius: 16px;
+  margin: 80px 60px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-secundario-escrito {
+  flex: 1;
+}
+
+.secundario-titulo {
+  font-family: "Righteous", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #582d1c;
+  margin-bottom: 16px;
+}
+
+.secundario-texto {
+  font-family: "DM Serif Text", serif;
+  font-size: 18px;
+  color: #5f3a2b;
+  margin-bottom: 24px;
+  line-height: 1.5;
 }
 
 .secundario-lista {
-    font-family: "DM Serif Text", sans-serif;
-    color:  #582d1c;
-    font-weight: 700;
-    font-size: 18px;  
-} 
-.secundario-imagem {
-    width: 400px;
-    height: 200px;
+  font-family: "DM Serif Text", serif;
+  font-size: 20px;
+  color: #331a11;
+  font-weight: 500;
+  line-height: 1.6;
+  padding-left: 20px;
+  list-style: none;
 }
+
+.secundario-lista li::before {
+  margin-right: 10px;
+  color: #e1ac8b;
+}
+
+.secundario-imagem {
+  flex-shrink: 0;
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+ 
+}
+
+.como-funciona {
+  font-family: "DM Serif Text", sans-serif;
+  font-size: 20px;
+  color: #331a11;
+  text-align: center;
+  margin: 80px 20px;
+}
+
+.passos {
+  font-family: "DM Serif Text", sans-serif;
+  color: #582d1c;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.passo {
+  max-width: 150px;
+  text-align: center;
+}
+
+.passo img {
+  width: 80px;
+  height: 80px;
+}
+
+.passo p {
+  font-family: "DM Serif Text", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.proposito, .voluntarios {
+  background-color: #fdf7f2;
+  border-top: 1px solid #e7ccbb;
+  padding: 60px 30px;
+}
+
+.proposito-conteudo, .voluntarios-conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.proposito-texto, .voluntarios-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.imagem-secao {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-secao {
+  font-family: "Righteous", serif;
+  font-size: 32px;
+  color: #582d1c;
+  margin-bottom: 20px;
+}
+
+.texto-secao {
+  font-family: "DM Serif Text", sans-serif;
+  font-size: 18px;
+  color: #5f370e;
+  line-height: 1.6;
+}
+
+.botao-voluntario {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #e1ac8b;
+  color: #F8F1EB;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-family: "DM Serif Text", sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.botao-voluntario:hover {
+  background-color: #d08f6a;
+  cursor: pointer;
+}
+
 
 .rodape {
     padding: 32px;

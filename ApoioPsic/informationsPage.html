@@ -6,19 +6,20 @@
   <title>Informações sobre Emergências</title>
   <link rel="stylesheet" href="css/informationsPage.css" />
 </head>
+
+
 <body>
 
   <header class="cabecalho-logo">
         <img class="logo-cabecalho" src="/ApoioPsic/tela-inicial/img/nexus-log.png" alt="Logo Nexus - Apoio psicológico">
         <nav class="menu-cabecalho">
-            <a class="item-menu" href="/ApoioPsic/tela-inicial/inicial.html">Início</a>
+            <a class="item-menu" href="tela-inicial/inicial.html">Início</a>
             <a class="item-menu" href="/ApoioPsic/informationsPage.html">Informativos</a>
             <a class="item-menu" href="/ApoioPsic/resourcesPage.html">Recursos</a>
-            <a class="item-menu" href="/ApoioPsic/contactPage.html">Contatos</a> 
+            <a class="item-menu" href="/ApoioPsic/contactPage.html">Contatos</a>
             <a class="item-menu" href="/ApoioPsic/chatPage.html">Chat de Apoio</a>
             <button class="botao-emergencia"><a href="/ApoioPsic/emergencyPage.html">Emergência</a></button>
-            <button class="botao-menu">Idioma</button>
-            <a class="item-menu botao-cadastro" href="/ApoioPsic/cadastroPage.html">Cadastro</a>
+            <button class="botao-menu">Selecione um idioma</button>
         </nav>
     </header>
   
@@ -33,15 +34,13 @@
 
   
   <main class="container main-content">
-    
-    
     <section class="info-box">
       <div class="icon">
         ℹ️
       </div>
       <div>
         <h2>Compreendendo o impacto psicológico</h2>
-        <p>
+        <p class="info-box-text">
           Situações de emergência e calamidades podem causar fortes reações emocionais como medo, ansiedade, tristeza e estresse. 
           Estas reações são normais frente a eventos anormais. Compreender os diferentes tipos de eventos e seus impactos específicos 
           pode ajudar no processo de enfrentamento e recuperação.
@@ -49,16 +48,53 @@
       </div>
     </section>
 
-    
-    <section>
+  <section class="weather-alert-section">
+  <h2>Previsão e Alertas climáticos </h2>
+
+  <div class="weather-search">
+    <input type="text" id="regionInput" placeholder="Insira sua região" />
+    <button onclick="showWeatherAlert()">Buscar</button>
+  </div>
+
+  <div class="weather-card" id="weatherCard" style="display: none;">
+    <h3>⚠️ Alerta Severo</h3>
+    <p>Fortes chuvas se aproximam da sua região. Busque um local coberto e seguro.</p>
+  </div>
+</section>
+
+     <section class="section-card">
       <h2>Tipos de Eventos Extremos</h2>
-      <div class="grid">
-        <div class="card">Enchentes</div>
-        <div class="card">Incêndios</div>
-        <div class="card">Deslizamentos</div>
+      <main>
+      <div class="container">
+        <div class="card-grid">
+          <div class="card">
+            <h3>Inundações</h3>
+            <p class="full">Inundações são eventos em que há submersão de áreas normalmente secas devido ao aumento do nível de água. Podem causar perdas materiais, desalojamento de pessoas e traumas psicológicos.</p>
+          </div>
+          <div class="card">
+            <h3>Incêndios</h3>
+            <p class="full">Incêndios, sejam urbanos ou florestais, representam ameaças à vida, propriedades e meio ambiente. O trauma relacionado a incêndios pode incluir TEPT, ansiedade e depressão.</p>
+          </div>
+          <div class="card">
+            <h3>Terremotos</h3>
+            <p class="full">Terremotos são movimentos súbitos da superfície terrestre, causando destruição física e impactos psicológicos profundos nas comunidades afetadas.</p>
+          </div>
+          <div class="card">
+            <h3>Secas</h3>
+            <p class="full">Secas prolongadas afetam a disponibilidade de água, agricultura e subsistência, gerando estresse crônico e ansiedade sobre necessidades básicas.</p>
+          </div>
+          <div class="card">
+            <h3>Pandemias</h3>
+            <p class="full">Pandemias como a COVID-19 causam não apenas riscos à saúde física, mas também isolamento social, medo e ansiedade generalizados.</p>
+          </div>
+          <div class="card">
+            <h3>Deslizamentos</h3>
+            <p class="full">Deslizamentos de terra podem destruir comunidades inteiras em instantes, causando deslocamento, perda e trauma severo aos sobreviventes.</p>
+          </div>
+        </div>
       </div>
     </section>
-
+  </main>
     
     <section class="guidance-box">
       <h2>Orientações Gerais</h2>
@@ -92,13 +128,34 @@
 
     <section class="note-box">
       <h3>Lembre-se:</h3>
-      <p>
+      <p> <strong>
         Suas reações emocionais a eventos traumáticos são normais. Cada pessoa reage de forma diferente e 
         em seu próprio tempo. Não existe um cronograma "correto" para se recuperar de experiências difíceis. 
         Seja paciente consigo mesmo e busque apoio quando necessário.
+        </strong>
       </p>
     </section>
   </main>
 
+  <footer class="rodape">
+    <p>Nexus - Apoio Psicológico | Feito com carinho para ajudar pessoas em momentos difíceis.</p>
+    <p>Em caso de emergências e perigo, busque ajuda imediata.</p>
+  </footer>
+
+<script>
+function showWeatherAlert() {
+  const region = document.getElementById("regionInput").value.trim();
+  const weatherCard = document.getElementById("weatherCard");
+
+  if (region !== "") {
+    alert("⚠️ ALERTA SEVERO: Fortes chuvas se aproximam de " + region + ". Busque abrigo seguro!");
+    weatherCard.style.display = "block";  
+  } else {
+    alert("Por favor, insira sua região.");
+    weatherCard.style.display = "none";
+  }
+ }
+
+ </script>
 </body>
 </html>

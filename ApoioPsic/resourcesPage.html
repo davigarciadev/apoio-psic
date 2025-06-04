@@ -11,14 +11,13 @@
   <header class="cabecalho-logo">
         <img class="logo-cabecalho" src="/ApoioPsic/tela-inicial/img/nexus-log.png" alt="Logo Nexus - Apoio psicológico">
         <nav class="menu-cabecalho">
-            <a class="item-menu" href="/ApoioPsic/tela-inicial/inicial.html">Início</a>
+            <a class="item-menu" href="tela-inicial/inicial.html">Início</a>
             <a class="item-menu" href="/ApoioPsic/informationsPage.html">Informativos</a>
             <a class="item-menu" href="/ApoioPsic/resourcesPage.html">Recursos</a>
-            <a class="item-menu" href="/ApoioPsic/contactPage.html">Contatos</a> 
+            <a class="item-menu" href="/ApoioPsic/contactPage.html">Contatos</a>
             <a class="item-menu" href="/ApoioPsic/chatPage.html">Chat de Apoio</a>
             <button class="botao-emergencia"><a href="/ApoioPsic/emergencyPage.html">Emergência</a></button>
-            <button class="botao-menu">Idioma</button>
-            <a class="item-menu botao-cadastro" href="/ApoioPsic/cadastroPage.html">Cadastro</a>
+            <button class="botao-menu">Selecione um idioma</button>
         </nav>
     </header>
   
@@ -41,9 +40,11 @@
         <div class="filter-box">
           <select id="categorySelect">
             <option value="">Todas categorias</option>
-            <option value="Saúde Mental">Saúde Mental</option>
-            <option value="Orientações">Orientações</option>
-            
+            <option value="Saúde Mental">Autoajuda</option>
+            <option value="Orientações">Família</option>
+            <option value="Orientações">Recuperação</option>
+            <option value="Orientações">Emergência</option>
+            <option value="Orientações">Informativo</option>
           </select>
         </div>
       </div>
@@ -56,14 +57,45 @@
       <div class="resource-grid">
         
         <div class="resource-card">
-          <h3>Guia de Primeiros Socorros Emocionais</h3>
-          <p>Aprenda como agir em situações de crise emocional.</p>
+          <h3 class="resource-card-title">Técnicas de Respiração para Ansiedade</h3>
+          <p>Aprenda técnicas simples de respiração que podem ajudar a reduzir sintomas de ansiedade durante situações de crise.</p>
+          <a class=link-ajuda href="#">Saiba mais</a>
         </div>
         <div class="resource-card">
-          <h3>Rede de Apoio Psicológico</h3>
-          <p>Encontre profissionais próximos de você.</p>
+          <h3 class="resource-card-title">Rede de Apoio Psicológico</h3>
+          <p>Encontre profissionais de saúde psicológica próximos de você.</p>
+          <a class=link-ajuda href="#">Saiba mais</a>
         </div>
-        
+        <div class="resource-card">
+          <h3 class="resource-card-title">Guia para Pais: Apoiando Crianças em Crises</h3>
+          <p>Como ajudar crianças a processar eventos traumáticos e expressar seus sentimentos de forma saudável.</p>
+          <a class=link-ajuda href="#">Saiba mais</a>
+        </div>
+         <div class="resource-card">
+          <h3 class="resource-card-title">Lidando com Perdas Materiais</h3>
+          <p>Estratégias para processar emocionalmente a perda de bens e reconstruir sua vida após desastres.</p>
+          <a class=link-ajuda href="#">Saiba mais</a>
+        </div>
+        <div class="resource-card">
+          <h3 class="resource-card-title">Primeiros Socorros Psicológicos</h3>
+          <p>Guia básico para oferecer apoio psicológico imediato a pessoas afetadas por eventos traumáticos.</p>
+          <a class=link-ajuda href="#">Saiba mais</a>
+        </div>
+        <div class="resource-card">
+          <h3 class="resource-card-title">Meditações Guiadas para Trauma</h3>
+          <p>Áudios de meditação especialmente desenvolvidos para ajudar no processamento de experiências traumáticas.</p>
+          <a class=link-ajuda href="#">Saiba mais</a>
+        </div>
+         <div class="resource-card">
+          <h3 class="resource-card-title">Reconhecendo Sinais de TEPT</h3>
+          <p>Como identificar sinais de Transtorno de Estresse Pós-Traumático em você ou em pessoas próximas.</p>
+          <a class=link-ajuda href="#">Saiba mais</a>
+        </div>
+        <div class="resource-card">
+          <h3 class="resource-card-title">Informativos sobre Emergências</h3>
+          <p>Como lidar e agir de acordo com o tipo de situação emergencial.</p>
+          <a class=link-ajuda href="#">Saiba mais</a>
+        </div>
       </div>
     </div>
   </main>
@@ -78,20 +110,25 @@
   <section class="help-section">
     <div class="container">
       <h2 class="section-title">Precisa de mais ajuda?</h2>
+      <p class="section-subtitle">Se você não encontrou o que procura ou precisa de assistência personalizada, não hesite em usar nosso chat de apoio ou entrar em contato com profissionais especializados.</p>
       <div class="help-boxes">
         <div class="help-box">
           <h3>Recursos Online</h3>
           <p>Acesse nosso chat de apoio para orientações iniciais.</p>
-          <a href="/chat" class="btn btn-blue">Iniciar chat</a>
+          <a href="chatPage.html" class="btn btn-blue">Iniciar chat</a>
         </div>
         <div class="help-box">
           <h3>Ajuda Profissional</h3>
           <p>Encontre profissionais de saúde mental qualificados.</p>
-          <a href="/contatos" class="btn btn-green">Ver contatos</a>
+          <a href="contactPage.html" class="btn btn-green">Ver contatos</a>
         </div>
       </div>
     </div>
   </section>
 
+  <footer class="rodape">
+    <p>Nexus - Apoio Psicológico | Feito com carinho para ajudar pessoas em momentos difíceis.</p>
+    <p>Em caso de emergências e perigo, busque ajuda imediata.</p>
+  </footer>
 </body>
 </html>

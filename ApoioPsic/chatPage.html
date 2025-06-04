@@ -18,15 +18,14 @@
 
   <header class="cabecalho-logo">
         <img class="logo-cabecalho" src="/ApoioPsic/tela-inicial/img/nexus-log.png" alt="Logo Nexus - Apoio psicológico">
-        <nav class="menu-cabecalho">
-            <a class="item-menu" href="/ApoioPsic/tela-inicial/inicial.html">Início</a>
+         <nav class="menu-cabecalho">
+            <a class="item-menu" href="tela-inicial/inicial.html">Início</a>
             <a class="item-menu" href="/ApoioPsic/informationsPage.html">Informativos</a>
             <a class="item-menu" href="/ApoioPsic/resourcesPage.html">Recursos</a>
-            <a class="item-menu" href="/ApoioPsic/contactPage.html">Contatos</a> 
+            <a class="item-menu" href="/ApoioPsic/contactPage.html">Contatos</a>
             <a class="item-menu" href="/ApoioPsic/chatPage.html">Chat de Apoio</a>
             <button class="botao-emergencia"><a href="/ApoioPsic/emergencyPage.html">Emergência</a></button>
-            <button class="botao-menu">Idioma</button>
-            <a class="item-menu botao-cadastro" href="/ApoioPsic/cadastroPage.html">Cadastro</a>
+            <button class="botao-menu">Selecione um idioma</button>
         </nav>
     </header>
 
@@ -42,7 +41,7 @@
   <div class="conteudo-principal">
     <div class="grid-container">
       
-      <div class="chat-box">
+  <div class="chat-box">
   <div class="chat-simulacao">
     <p class="bot">
       <img src="/ApoioPsic/tela-inicial/img/nexus-log.png" alt="Logo apoio">
@@ -53,7 +52,10 @@
       <img src="/ApoioPsic/tela-inicial/img/nexus-log.png" alt="Logo apoio">
       Claro! Aqui está o número de emergência dos Bombeiros: 193
     </p>
-    <textarea class="caixa-chat" rows="2" placeholder="Digite sua mensagem aqui"></textarea>
+      <div class="chat-input-area">
+    <input class="caixa-chat" type="text" id="input" placeholder="Digite sua mensagem aqui..." autocomplete="off" />
+    <button class="botao-chat" type="submit">Enviar</button>
+      </div>
   </div>
 </div>
   
@@ -124,5 +126,9 @@
     </div>
   </div>
 
+  <footer class="rodape">
+    <p>Nexus - Apoio Psicológico | Feito com carinho para ajudar pessoas em momentos difíceis.</p>
+    <p>Em caso de emergências e perigo, busque ajuda imediata.</p>
+  </footer>
 </body>
 </html>
