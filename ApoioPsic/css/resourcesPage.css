@@ -78,10 +78,10 @@ body {
   text-align: center;
 }
 
-/* Header */
+
 .header {
-  background-color: #E1AC8B;
-  color: white;
+   background: linear-gradient(68.15deg, #E1AC8B 16.62%, #F8F1EB 85.61%);
+  color: #582d1c;
   padding: 5rem 0;
 }
 
@@ -95,7 +95,7 @@ body {
   max-width: 700px;
   margin: 0 auto;
   font-size: 1.125rem;
-  color: #cbd5e1;
+  color: #6a452c;
 }
 
 /* Search & Filter */

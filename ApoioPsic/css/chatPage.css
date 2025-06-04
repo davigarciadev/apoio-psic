@@ -164,6 +164,18 @@ body {
   gap: 10px;
 }
 
+caixa-chat {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #E1AC8B;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  resize: none;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
