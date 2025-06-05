@@ -184,7 +184,7 @@ body {
 }
 
 .secundario-texto {
-  font-family: "DM Serif Text", serif;
+  font-family: "DM Serif Text", sans-serif;
   font-size: 18px;
   color: #5f3a2b;
   margin-bottom: 24px;
@@ -192,7 +192,7 @@ body {
 }
 
 .secundario-lista {
-  font-family: "DM Serif Text", serif;
+  font-family: "DM Serif Text", sans-serif;
   font-size: 20px;
   color: #331a11;
   font-weight: 500;
