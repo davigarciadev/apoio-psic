@@ -52,7 +52,6 @@ body {
 
 }  
 
-
 .botao-menu {
     background-color: #E1AC8B;
     width: 70px;
@@ -63,7 +62,8 @@ body {
     font-weight: 700;
     font-size: 15px;
     color: #582d1c;
-    
+    justify-content: center;
+   
 }  
 .botao-cadastro {
     background-color: #E1AC8B;

@@ -65,9 +65,9 @@ body {
     font-weight: 700;
     font-size: 15px;
     color: #582d1c;
-    
-}  
-
+    justify-content: center;
+  
+} 
 .botao-cadastro {
     background-color: #E1AC8B;
     width: 125px;
@@ -110,10 +110,22 @@ body {
   padding: 60px 16px;
 }
 
-h1, h2, h3 {
+h1{
+  margin-top: 0;
+  font-family: "Righetous", serif;
+  color: #582d1c;
+}
+
+.eventos-title {
+  margin-top: 0;
+  font-family: "Righetous", serif;
+  color: #582d1c;
+}
+
+.h2, h3 {
   margin-top: 0;
   font-family: "DM Serif Text", sans-serif;
-  color: #331a11;
+  color: #582d1c;
 }
 
 .info-box {
@@ -124,6 +136,8 @@ h1, h2, h3 {
   border-radius: 8px;
   margin-bottom: 40px;
   gap: 16px;
+  font-family: "DM Serif Text", sans-serif;
+   color: #582d1c;
 }
 
 .info-box .icon {

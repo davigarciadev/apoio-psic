@@ -60,20 +60,7 @@ body {
 
 .botao-menu {
     background-color: #E1AC8B;
-    width: 90px;
-    height: 40px;
-    border: none;   
-    border-radius: 20px;
-     font-family: "DM Serif Text", sans-serif;
-     font-weight: 700;
-     font-size: 15px;
-     color: #582d1c;
-    
-}  
-
-.botao-cadastro {
-    background-color: #E1AC8B;
-    width: 90px;
+    width: 70px;
     height: 40px;
     border: none;   
     border-radius: 20px;
@@ -82,8 +69,8 @@ body {
     font-size: 15px;
     color: #582d1c;
     justify-content: center;
-}
-
+  
+} 
 
 .cadastro-container {
     display: flex;
