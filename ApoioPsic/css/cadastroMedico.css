@@ -140,15 +140,12 @@ body {
 }
 
 .rodape {
-    /* padding: 32px; */
+    padding: 32px;
     /* border-top: 0.4px solid #fff2e7; */
-    display: flex;
+    display: block;
     text-align: center;
     color:  #582d1c;
     font-family: "Righteous", serif; 
-    font-weight: 400; 
-    font-size: 14px;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
+    font-weight: 700; 
+    font-size: 15px;
 }

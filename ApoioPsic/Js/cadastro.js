@@ -24,6 +24,12 @@ document.getElementById("formCadastro").addEventListener("submit", function(even
 
         document.getElementById("formCadastro").reset();
         console.log("Usuários cadastrados:", usuarios);
+
+        
+        setTimeout(() => {
+            window.location.href = "/ApoioPsic/cadastroMedico.html";
+        }, 1500);
+
     } else {
         mensagem.textContent = "Por favor, preencha todos os campos.";
         mensagem.style.color = "#c0392b";
